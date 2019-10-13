@@ -16,7 +16,7 @@ class Post
     @@all
   end
   
-  def author_name
+  def author_name(name)
     Author.name
   end
 end
