@@ -15,4 +15,6 @@ class Post
   def self.all
     @@all
   end
+  
+  def 
 end
