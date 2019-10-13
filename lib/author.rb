@@ -20,5 +20,5 @@ class Author
      add_post(post)
   end
   
-  /
+
 end
