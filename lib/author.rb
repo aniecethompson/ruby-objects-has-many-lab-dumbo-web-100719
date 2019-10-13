@@ -3,24 +3,24 @@ class Author
  
   def initialize(name)
     @name = name
-    @songs = []
+    @posts = []
   end
  
-   def songs
-    Song.all.select {|song| song.artist == self}
+   def posts
+    Post.all.select {|post| post.author == self}
   end
   
-   def add_song(song)
-    @songs << song
-    song.artist = self
+   def add_post(post)
+    @posts << post
+    post.author = self
   end
   
-   def add_song_by_name(song)
-     song= Song.new(song)
-     add_song(song)
+   def add_post_by_name(post)
+     post= Post.new(post)
+     add_post(post)
   end
   
-  def self.song_count
-    Song.all.count
+  def self.post_count
+    Post.all.count
   end
 end
