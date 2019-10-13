@@ -15,4 +15,8 @@ class Song
   def self.all
     @@all
   end
+  
+  def author_name
+    self.author.name if author
+  end
 end
